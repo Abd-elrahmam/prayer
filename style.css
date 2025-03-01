@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Cairo", serif;
+  direction: rtl;
+    background: url(./image/bg2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+.container {
+  background: url(./image/bg2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.titleOne {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.head {
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 20px auto;
+}
+.title {
+  font-size: 35px;
+}
+hr {
+  margin: 0 20px;
+  color: #a04949;
+}
+.cards {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 15%;
+  text-align: center;
+}
+
+.card .header {
+  padding: 10px;
+  background: linear-gradient(45deg, #000000, #674f00d7);
+}
+.card .body {
+  padding: 10px;
+  background:#9a9a9adb;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  height: 100%;
+}
+.card .body .main {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.select {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #9a9a9adb;
+  border-radius: 16px;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10px;
+}
+.select label {
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.select select {
+  width: 250px;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-right: 2px solid #372d2d;
+  cursor: pointer;
+}
+
+.select select option {
+  background-color: #666666c4;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* media query for tablet */
+@media (max-width: 1024px) {
+  .container {
+    background-image: none;
+    margin-bottom: 100px;
+  }
+  body {
+    background: linear-gradient(45deg, #000000, #674f00d7);
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  .card {
+    width: 40%;
+    margin: 10px;
+  }
+  .card .body {
+    font-size: 18px;
+  }
+  .select {
+    align-items: center;
+  }
+}
+/* media query for mobile */
+@media (max-width: 600px) {
+  .container {
+    background-image: none;
+    margin-bottom: 100px;
+  }
+
+  body {
+    background: linear-gradient(45deg, #000000, #674f00d7);
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .card .body {
+    font-size: 16px;
+    height: 120px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .head {
+    width: 90%;
+  }
+  .date {
+    font-size: 18px;
+  }
+  .select {
+    margin: 10px  auto;
+  }
+}
